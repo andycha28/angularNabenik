@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+
+<div>
+  <p>Los lenguajes de programación geniales son:</p>
+    <p>{{programmingLangs}}</p>
+    <ul>
+      <li *ngFor = "let langs of programmingLangs"> 
+        <app-hello-world [nombre] = langs></app-hello-world>
+      </li>
+    </ul>
+</div>

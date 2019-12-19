@@ -1,0 +1,29 @@
+<<div class="ui raised segment">
+    <h2 class="ui header">Demo reactive form </h2>
+<form #f="ngForm" (ngSubmit)="onSubmit(f.value)" class="ui form"> 
+    <div class="field">
+        <label for="nameInput">Name</label>
+        <input type="text" id="nameInput" placeholder="Name" name="name" ngModel>
+    </div>
+    <div class="field">
+            <label for="nameInput">Lastname</label>
+            <input type="text" id="lastnameInput" placeholder="LastName" name="lastname" ngModel>
+        </div>
+        <button type="submit" class="ui button">Submit</button>
+</form>
+</div>
+
+<div class="ui raised segment">
+        <h2 class="ui header">Demo reactive form </h2>
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)" class="ui form"> 
+        <div class="field">
+            <label for="nameInput">Name</label>
+            <input type="text" id="nameInput" formcontrolName ="name" placeholder="Name" name="name">
+        </div>
+        <div class="field">
+                <label for="nameInput">Lastname</label>
+                <input type="text" id="lastnameInput" formcontrolName ="lastname" placeholder="LastName" name="lastname" >
+            </div>
+            <button type="submit" class="ui button">Submit</button>
+    </form>
+    </div>

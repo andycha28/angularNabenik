@@ -1,0 +1,14 @@
+"use strict";
+exports.__esModule = true;
+var uno_1 = require("./uno");
+var carro_1 = require("./carro");
+var tres_1 = require("./tres");
+var amigo = uno_1.penguin;
+var myDog = uno_1.dog;
+console.log("Hola amigo pinguino: " + amigo);
+console.log("Hola amigo dog: " + myDog);
+var myCar = new carro_1.Carro('rojo', 'mazda', 1990);
+myCar.correr();
+//myCar.corre();
+var myTurtle = tres_1["default"];
+console.log("Hola amigo turtle: " + myTurtle);

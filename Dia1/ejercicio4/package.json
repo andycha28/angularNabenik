@@ -1,0 +1,15 @@
+{
+  "name": "ejercicio4",
+  "version": "1.0.0",
+  "description": "ejercicio 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "nelson cruz",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "jquery": "^3.4.1"
+  }
+}

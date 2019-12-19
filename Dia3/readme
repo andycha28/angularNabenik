@@ -1,0 +1,5 @@
+compilation context
+ - tsconfig.json
+ - tsc --init
+
+based ECMA 5   

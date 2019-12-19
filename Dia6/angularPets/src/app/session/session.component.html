@@ -1,0 +1,13 @@
+<h1>Iniciar Session</h1>
+<div *ngIf = "!userService.isLoggedIn()">
+    <label>User:</label>
+    <input id="name" placeholder="panchito"
+        [(ngModel)] = "user">
+</div>
+<div>
+   <p *ngIf = "userService.isLoggedIn()">Bem-vindo {{user}} </p>
+</div>
+<label *ngIf = "!userService.isLoggedIn()" (click) = "initSession()">Iniciar Sesion </label>
+<div>
+    <label *ngIf = "userService.isLoggedIn()" (click) = "closeSession()">Cerrar Sesion</label>
+</div>

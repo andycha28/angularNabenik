@@ -1,0 +1,27 @@
+
+<app-reactive></app-reactive>
+<br>
+<form class="ui large form"> 
+<h3 class="ui header">Add a starship</h3>
+<div class="field">
+    <label class="label" for="title">Name:</label>
+    <div class="control">
+      <input class="input" type="text" id="title" placeholder="Enter starship" #newTitle>
+    </div>
+  </div>
+  <div class="field">
+      <label class="label" for="model">Model:</label>
+      <div class="control">
+        <input class="input" type="text" id="model" placeholder="Enter starship" #newModel>
+      </div>
+  </div>
+<button (click)="addStarship(newTitle,newModel)" class="ui positive right floated button">Add starship ..</button>
+
+</form>
+<div class="alert alert-primary" role="alert">
+    {{selectedOne}}
+</div>
+
+<div class="ui grid posts">
+    <app-starship *ngFor="let starchip of ordemNave()" [starship] = "starchip" (selectedStarship)="starshipSelectionSubscriber($event)"></app-starship>
+</div>
